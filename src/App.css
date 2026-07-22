@@ -675,5 +675,94 @@
   .metrics-grid {
     grid-template-columns: 1fr;
   }
+
+  .hero-badge-wrapper .badge {
+    white-space: normal;
+    text-align: center;
+    line-height: 1.4;
+  }
+}
+
+/* August 2026 edition */
+.edition-note {
+  margin: 0 0 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba(168, 85, 247, 0.28);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.08), rgba(34, 197, 94, 0.04));
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.edition-note strong {
+  color: var(--color-text-primary);
+}
+
+.card {
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+}
+
+.card:focus-visible,
+.filter-pill:focus-visible,
+.panel-close:focus-visible,
+.source-link:focus-visible {
+  outline: 2px solid var(--color-accent-green);
+  outline-offset: 3px;
+}
+
+.estimate-note {
+  margin-top: -0.5rem;
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  color: var(--color-accent-green);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(34, 197, 94, 0.35);
+}
+
+.source-link:hover {
+  color: #86efac;
+  border-bottom-color: currentColor;
+}
+
+.risk-title {
+  color: var(--color-accent-orange);
+  border-bottom-color: rgba(249, 115, 22, 0.25);
+}
+
+.risk-box {
+  border: 1px solid rgba(249, 115, 22, 0.28);
+  border-radius: 8px;
+  padding: 16px;
+  background: rgba(249, 115, 22, 0.06);
+  color: #d4d4d8;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.card .special-badge {
+  top: 12px;
+  right: 12px;
+}
+
+@media (max-width: 640px) {
+  .card .special-badge {
+    right: 12px;
+    max-width: calc(100% - 80px);
+    font-size: 10px;
+  }
 }
 
